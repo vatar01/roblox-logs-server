@@ -64,6 +64,7 @@
                 <td>${log.player}</td>
                 <td>${log.event}</td>
                 <td>${JSON.stringify(log.value || {})}</td>
+                <td>${log.value?.balance ?? ""}</td>
                 <td>${new Date(log.time).toLocaleString()}</td>
             `;
             tr.onclick = () => openPlayer(log.player);
